@@ -2,7 +2,6 @@ class HomeController < ApplicationController
   require 'open-uri'
 
   def index
-    @checkbox = WEATHER['stations']
   end
 
   def get_stations
