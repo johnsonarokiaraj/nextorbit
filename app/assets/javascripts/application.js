@@ -13,4 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require bootstrap.min
+//= require sb-admin-2
+//= require metisMenu.min
+
+//= require angular
+//= require angular-animate
+//= require angular-resource
+//= require angular_app
