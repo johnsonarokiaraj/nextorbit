@@ -46,4 +46,6 @@ end
 # Use debugger
 gem 'debugger', group: [:development, :test]
 
+gem "thin"
+
 ruby '2.0.0'
