@@ -4,7 +4,7 @@ development:
     - name: CAPE MAY CO
       state: NEW JERSEY
       lat: 39.008
-      long: 74.908
+      long: -74.908
       
     - name: ATLANTIC CITY
       state: NEW JERSEY

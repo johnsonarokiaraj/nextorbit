@@ -1,0 +1,32 @@
+<div class="col-lg-12" ng-repeat="weather in weathers">
+  <div class="alert alert-info weather">
+    <div class="col-lg-2">
+      <div class="alert-link">Name</div>
+      <div>{{ weather.name }}</div>
+    </div>
+    <div class="col-lg-2">
+      <div class="alert-link">Longitude</div> 
+      <div>{{ weather.coord.lon }}</div>
+    </div>
+    <div class="col-lg-2">
+      <div class="alert-link">Latitude</div> 
+      <div>{{ weather.coord.lat }}</div>
+    </div>
+    <div class="col-lg-2">
+      <div class="alert-link">Temperature</div>
+      <div>{{ weather.main.temp_min }} ~ {{ weather.main.temp_max }}</div>
+    </div>
+
+    <div class="col-lg-2">
+      <div class="alert-link">Pressure</div>
+      <div>{{ weather.main.pressure }}</div>
+    </div>
+
+    <div class="col-lg-2">
+      <div class="alert-link">Humidity</div>
+      <div>{{ weather.main.humidity }}</div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+

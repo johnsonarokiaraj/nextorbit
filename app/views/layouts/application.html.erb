@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="store">
+<html lang="en" ng-app="weather">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,13 +18,8 @@
 
 </head>
 
-<body ng-controller="StoreController">
-
-  <h3> {{name}}</h3>
-
-
+<body ng-controller="StoreController as store">
     <div id="wrapper">
-
       <%= render 'layouts/side_menu' %>
         <!-- Page Content -->
         <div id="page-wrapper">
