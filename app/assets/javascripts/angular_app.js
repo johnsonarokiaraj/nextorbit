@@ -1,7 +1,9 @@
 (function (){
     var app = angular.module('weather', []);
     app.controller('StoreController',['$scope', '$http', function($scope, $http){
-        $http.get("/stations").success(function(data){
+        $scope.get_stations = function () {
+            console.log('hi');
+            $http.get("/stations").success(function(data){
             $scope.stations = data;        
             $scope.stations = $scope.stations.map(function(station){
                 station.is_selected = false;
@@ -9,7 +11,8 @@
             });
             console.log(data);
         });
-        
+        };
+        $scope.get_stations();
 
         $scope.weathers = [];
         $scope.call_weather = function(station){
