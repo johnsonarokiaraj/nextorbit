@@ -1,6 +1,6 @@
 (function (){
     var app = angular.module('weather', []);
-    app.controller('StoreController', function($scope, $http){
+    app.controller('StoreController',['$scope', '$http', function($scope, $http){
         $http.get("/stations").success(function(data){
             $scope.stations = data;        
             $scope.stations = $scope.stations.map(function(station){
@@ -27,5 +27,5 @@
                });
             }
         };
-    });
+    }]);
 })();
