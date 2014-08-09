@@ -5,7 +5,12 @@ class HomeController < ApplicationController
   end
 
   def get_stations
-    @checkbox = WEATHER['stations']
+    if WEATHER['stations']
+      @checkbox = WEATHER['stations']
+    else
+      # Heroku hosting problem fix
+      @checkbox = stations_backup
+    end
     render :json => @checkbox
   end
 
